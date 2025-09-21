@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-я Домашняя работа по вебу</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <img src="logo.png" alt="Логотип" class="logo">
+                <h1 class="site-title">Мой сайт</h1>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#">Ссылка меню 1</a></li>
+                <li><a href="#">Ссылка 2</a></li>
+                <li><a href="#">Ссылка 3</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Домашняя работа по Web-программированию</h2>
+        
+        <section>
+            <h3>Маркированный список гиперссылок</h3>
+            <ul>
+                <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на kubsu.ru</a></li>
+                <li><a href="https://kubsu.ru/">Абсолютная гиперссылка на kubsu.ru (HTTPS)</a></li>
+                <li><a href="https://kubsu.ru/"><img src="image.jpg" width="500" alt="Ссылка-изображение"></a></li>
+                <li><a href="/internal-page">Сокращенная ссылка на внутреннюю страницу</a></li>
+                <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+                <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li>
+                <li><a href="https://example.com/page?id=test">Ссылка с параметром id</a></li>
+                <li><a href="curent-page.html">Относительная ссылка в текущем каталоге</a></li>
+                <li><a href="about/name.html">Относительная ссылка в каталоге about</a></li>
+                <li><a href="../news.html">Относительная ссылка на уровень выше</a></li>
+                <li><a href="../../news.html">Относительная ссылка на два уровня выше</a></li>
+                <li>Контекстная ссылка в <a href="https://example.com">тексте абзаца</a></li>
+                <li><a href="https://ru.wikipedia.org/wiki/HTML#Браузерные_войны">Ссылка на фрагмент стороннего сайта</a></li>
+                <li>
+                    <img src="image.jpg" width="500" alt="Image map" class="map-image" usemap="#examplemap">
+                    <map name="examplemap">
+                        <area shape="rect" coords="0,0,250,500" href="https://example.com/rect" alt="Прямоугольная область">
+                        <area shape="circle" coords="321,169,89" href="https://example.com/circle" alt="Круглая область">
+                    </map>
+                </li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a>Ссылка без href</a></li>
+                <li><a href="https://example.com" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li>
+                <li>
+                    <!-- <noindex> -->
+                        <a href="https://example.com">Ссылка запрещенная для индексации</a>
+                    <!-- </noindex> -->
+                </li>
+                <li>
+                    <ol>
+                        <li><a href="https://example.com/1" title="Первая ссылка">Ссылка 1</a></li>
+                        <li><a href="https://example.com/2" title="Вторая ссылка">Ссылка 2</a></li>
+                        <li><a href="https://example.com/3" title="Третья ссылка">Ссылка 3</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://user:password@example.com/file.txt">Ссылка на файл на FTP с авторизацией</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3>Таблица</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                        <th>Колонка 3</th>
+                        <th>Колонка 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ячейка 1</td>
+                        <td>Ячейка 2</td>
+                        <td>Ячейка 3</td>
+                        <td>Ячейка 4</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 5</td>
+                        <td>Ячейка 6</td>
+                        <td>Ячейка 7</td>
+                        <td>Ячейка 8</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 9</td>
+                        <td>Ячейка 10</td>
+                        <td>Ячейка 11</td>
+                        <td>Ячейка 12</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 13</td>
+                        <td>Ячейка 14</td>
+                        <td>Ячейка 15</td>
+                        <td>Ячейка 16</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 17</td>
+                        <td colspan="2">Объединенная ячейка</td>
+                        <td>Ячейка 18</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Объединенная вертикально</td>
+                        <td>Ячейка 20</td>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 23</td>
+                        <td>Ячейка 24</td>
+                        <td>Ячейка 25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Форма</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="fio">ФИО:</label>
+                    <input type="text" id="fio" name="fio" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="birthdate">Дата рождения:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                
+                <fieldset>
+                    <legend>Пол:</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male" required> Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Женский
+                    </label>
+                </fieldset>
+                
+                <div>
+                    <label for="language">Любимый язык программирования:</label>
+                    <select id="language" name="language" multiple size="6">
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskel">Haskel</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="bio">Биография:</label>
+                    <textarea id="bio" name="bio" required></textarea>
+                </div>
+                
+                <div>
+                    <label>
+                        <input type="checkbox" name="agreement" required> С контрактом ознакомлен(а)
+                    </label>
+                </div>
+                
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+        
+    </main>
+        <footer>
+        <div class="container">
+            <p>(с) Дьяченко Владимир</p>
+        </div>
+    </footer>
+</body>
+</html>
